@@ -13,6 +13,8 @@ const body = document.querySelector('.custom-background');
 startBtn.addEventListener('click', onStart);
 stopBtn.addEventListener('click', onStop);
 
+let intervalId; 
+
 startBtn.style.position = 'absolute';
 startBtn.style.top = '50%';
 startBtn.style.left = '50%';
@@ -24,7 +26,7 @@ stopBtn.style.left = '50%';
 stopBtn.style.transform = 'translate(100%, -50%)';
 
 function onStart() {
-  const intervalId = setInterval(() => {
+  intervalId = setInterval(() => {
     const color = getRandomHexColor();
 
     body.style.backgroundColor = color;
