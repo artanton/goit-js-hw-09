@@ -13,7 +13,7 @@ const body = document.querySelector('.custom-background');
 startBtn.addEventListener('click', onStart);
 stopBtn.addEventListener('click', onStop);
 
-let intervalId; 
+let intervalId=null; 
 
 startBtn.style.position = 'absolute';
 startBtn.style.top = '50%';
