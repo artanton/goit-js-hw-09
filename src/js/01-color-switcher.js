@@ -24,7 +24,7 @@ stopBtn.style.left = '50%';
 stopBtn.style.transform = 'translate(100%, -50%)';
 
 function onStart() {
-  intervalId = setInterval(() => {
+  const intervalId = setInterval(() => {
     const color = getRandomHexColor();
 
     body.style.backgroundColor = color;
