@@ -36,7 +36,7 @@ function onSubmit(evt) {
   let position = 0;
 
   for (let i = 0; i < amount; i++) {
-    position = i+1;
+    position = i + 1;
 
     createPromise(position, delay)
       .then(({ position, delay }) => {

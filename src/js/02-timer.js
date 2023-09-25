@@ -84,7 +84,7 @@ function onClick(e) {
 
     timeRest = targetDate - currentDate;
     let value = convertMs(timeRest);
-    
+
     timerNormalize(value.days, value.hours, value.minutes, value.seconds);
 
     if (
